@@ -1,9 +1,8 @@
-package org.example;
+package org.example.game;
 
 import org.example.Menu.MainMenu;
 import org.example.Menu.Menu;
 import org.example.Menu.MenuFactory;
-import org.example.Menu.NewMenu;
 
 public class Game
 {
@@ -42,4 +41,26 @@ public class Game
         // 保存游戏相关内容至文件...
         mainMenu = null;
     }
+
+    private Game()
+    {
+    }
+
+    private static Game game;
+
+    public static Game getGameInstance()
+    {
+        if (null == game)
+        {
+            synchronized (Game.class)
+            {
+                if (null == game)
+                {
+                    return new Game();
+                }
+            }
+        }
+        return game;
+    }
+
 }

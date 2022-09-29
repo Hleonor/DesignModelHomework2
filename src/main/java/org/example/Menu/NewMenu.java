@@ -1,7 +1,6 @@
 package org.example.Menu;
 
-import org.example.Game;
-import org.example.Menu.Menu;
+import org.example.game.Game;
 
 import java.util.Scanner;
 
