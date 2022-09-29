@@ -5,6 +5,8 @@ import java.util.Random;
 
 public class HumanPlayer implements Player
 {
+    public String name;
+
     private static final int maxNumberofConn = 100;
 
     // 定义连接池

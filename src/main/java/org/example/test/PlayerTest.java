@@ -26,14 +26,17 @@ public class PlayerTest extends Thread
 
     private void applyForPlayerWithNumber()
     {
-        for (int i = 1; i < 20; i++)
+        for (int i = 1; i < 5; i++)
         {
             HumanPlayer humanPlayer = HumanPlayer.getInstance(i);
-            System.out.println("为第 " + i + " 个玩家申请了第 " + HumanPlayer.getCountConnection() +
+            humanPlayer.name = "HumanPlayer" + i;
+            System.out.println("为玩家 " + humanPlayer.name + "申请了第 " + HumanPlayer.getCountConnection() +
             " 个连接");
             try
             {
-                Thread.sleep(5);
+                System.out.println(humanPlayer.name + " 正在游玩....");
+                Thread.sleep(1);
+                System.out.println(humanPlayer.name + " 下线\n");
             }
             catch (InterruptedException e)
             {
@@ -47,10 +50,14 @@ public class PlayerTest extends Thread
         for (int i = 0; i < 5; i++)
         {
             HumanPlayer humanPlayer = HumanPlayer.getInstance();
-            System.out.println("为玩家随机申请了第 " + humanPlayer.getCountConnection() + " 个连接");
+            humanPlayer.name = "RandomPlayer" + i;
+
+            System.out.println("为玩家 " + humanPlayer.name + " 随机申请了第 " + humanPlayer.getCountConnection() + " 个连接");
             try
             {
-                Thread.sleep(10);
+                System.out.println(humanPlayer.name + " 正在游玩....");
+                Thread.sleep(1);
+                System.out.println(humanPlayer.name + " 下线\n");
             }
             catch (InterruptedException e)
             {
@@ -66,9 +73,7 @@ public class PlayerTest extends Thread
         PlayerTest test2 = new PlayerTest();
         test1.setOperationType(1);
         test2.setOperationType(2);
-        test1.start();
-        test2.start();
-        test1.run();
         test2.run();
+        test1.run();
     }
 }
