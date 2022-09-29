@@ -6,9 +6,16 @@ import java.util.Random;
 public class HumanPlayer implements Player
 {
     private static final int maxNumberofConn = 100;
+
+    // 定义连接池
     private static ArrayList connnectionList = new ArrayList(maxNumberofConn);
 
     private static int countConnection = 0;
+
+    public static int getCountConnection()
+    {
+        return countConnection;
+    }
 
     static
     {
