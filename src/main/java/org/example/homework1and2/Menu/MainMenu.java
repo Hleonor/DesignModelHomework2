@@ -1,4 +1,4 @@
-package org.example.Menu;
+package org.example.homework1and2.Menu;
 
 import java.util.Scanner;
 

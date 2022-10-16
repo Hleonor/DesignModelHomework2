@@ -1,4 +1,4 @@
-package org.example.Player;
+package org.example.homework1and2.Player;
 
 import java.util.ArrayList;
 import java.util.Random;
