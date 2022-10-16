@@ -1,6 +1,6 @@
-package org.example.homework1and2.test;
+package org.example.test;
 
-import org.example.homework1and2.Player.HumanPlayer;
+import org.example.Player.HumanPlayer;
 import org.testng.annotations.Test;
 
 public class PlayerTest extends Thread

@@ -1,8 +1,8 @@
-package org.example.homework1and2.game;
+package org.example.game;
 
-import org.example.homework1and2.Menu.MainMenu;
-import org.example.homework1and2.Menu.Menu;
-import org.example.homework1and2.Menu.MenuFactory;
+import org.example.Menu.MainMenu;
+import org.example.Menu.Menu;
+import org.example.Menu.MenuFactory;
 
 public class Game
 {

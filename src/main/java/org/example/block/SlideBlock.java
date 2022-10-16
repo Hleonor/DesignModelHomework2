@@ -1,4 +1,4 @@
-package org.example.homework3.block;
+package org.example.block;
 
 public class SlideBlock implements Block
 {

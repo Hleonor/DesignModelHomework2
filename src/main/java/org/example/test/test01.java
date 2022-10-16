@@ -1,9 +1,9 @@
-package org.example.homework3.test;
+package org.example.test;
 
-import org.example.homework3.block.Block;
-import org.example.homework3.block.MoneyBlock;
-import org.example.homework3.map.EasyMap;
-import org.example.homework3.map.Map;
+import org.example.block.Block;
+import org.example.block.MoneyBlock;
+import org.example.map.EasyMap;
+import org.example.map.Map;
 import org.testng.annotations.Test;
 
 public class test01

@@ -1,6 +1,6 @@
-package org.example.homework1and2;
+package org.example;
 
-import org.example.homework1and2.game.Game;
+import org.example.game.Game;
 
 public class Main
 {

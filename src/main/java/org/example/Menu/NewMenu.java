@@ -1,6 +1,6 @@
-package org.example.homework1and2.Menu;
+package org.example.Menu;
 
-import org.example.homework1and2.game.Game;
+import org.example.game.Game;
 
 import java.util.Scanner;
 

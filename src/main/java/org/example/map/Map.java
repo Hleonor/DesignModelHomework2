@@ -1,6 +1,6 @@
-package org.example.homework3.map;
+package org.example.map;
 
-import org.example.homework3.block.Block;
+import org.example.block.Block;
 
 public abstract class Map
 {
@@ -15,4 +15,14 @@ public abstract class Map
         return block;
     }
     Block block;
+
+    public static MapBuilder builder()
+    {
+        return new MapBuilder();
+    }
+
+    public static class MapBuilder
+    {
+
+    }
 }

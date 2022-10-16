@@ -1,6 +1,6 @@
-package org.example.homework3.map;
+package org.example.map;
 
-import org.example.homework3.block.Block;
+import org.example.block.Block;
 
 public class HardMap extends Map
 {

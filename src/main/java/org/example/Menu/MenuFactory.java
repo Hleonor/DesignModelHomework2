@@ -1,4 +1,4 @@
-package org.example.homework1and2.Menu;
+package org.example.Menu;
 
 public class MenuFactory
 {
